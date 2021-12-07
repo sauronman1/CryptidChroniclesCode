@@ -19,9 +19,6 @@ void AGPJournal::BeginPlay()
 	GetComponents(UChildActorComponent::StaticClass(), Pages, true);
 	PageIndex = 0;
 	CurrentPage = Cast<UChildActorComponent>(Pages[PageIndex]);
-	
-	
-	//Cast<AGPPage>(CurrentPage->GetChildActor())->MakePageVisible(true);
 }
 
 void AGPJournal::OpenJournal()
@@ -47,11 +44,6 @@ void AGPJournal::PreviousPage()
 	CurrentPage = Cast<UChildActorComponent>(Pages[PageIndex]);
 	Cast<AGPPage>(CurrentPage->GetChildActor())->MakePageVisible(true);
 
-}
-
-void AGPJournal::ResetTool()
-{
-	
 }
 
 
