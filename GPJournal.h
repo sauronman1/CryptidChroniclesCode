@@ -30,7 +30,6 @@ public:
 	void NextPage();
 	void PreviousPage();
 	
-	virtual void ResetTool() override;
 	virtual void InitToolBindings() override;
 	virtual void ResetToolBindings() override;
 
